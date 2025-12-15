@@ -1,0 +1,36 @@
+**To quickly configure NeoVim for coding run the following commands:**
+```
+Arch Linux:
+  1 > sudo pacman -Syu neovim git base-devel cmake clang gcc
+  2 > git clone https://github.com/LazyVim/starter ~/.config/nvim
+  3 > rm -rf ~/.config/nvim/.git
+  4 > nvim 
+  5 > Wait until LazyVim is installed (automatically), then EVERYTHING's set, enjoy!
+```
+```
+Debian/Ubuntu:
+  1 > sudo apt install neovim git build-essential cmake clang gcc
+  2 > The rest is the same as in Arch Linux, follow the Arch instructions from now on. Continue in Nº2!
+```
+-----------------------------------------------------
+
+# USAGE:
+```
+Esc -> Enter command mode
+i   -> Enter editing mode
+```
+```
+Command Mode:
+  :w   -> Save file
+  :q   -> Quit WITHOUT SAVING
+  :q!  -> Force quit
+  :wq  -> Save and quit
+
+  :%y+ -> Copy the whole file on clipborad
+  :%d  -> Delete the whole file contents
+```
+```
+Visual Mode: //The mode you enter when you select text
+  "+y  -> Copy selected text on clipborad
+  d    -> Delete selected text
+```
